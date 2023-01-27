@@ -106,8 +106,10 @@ if __name__ == "__main__":
 
     problem = ["A * B / 2 + C - D", "(A + B) * C / D + E ^ A / B", "(A + B) + C / D * E ^ A / B", "(A + B) / C / D * E ^ A / B",
                "(A + B) - C / D - E ^ A / B", "(A + B) + C / D * E ^ A / B"]
+    print("INFIX 2 POSTFIX CONVERTER".center(60, "="))
+    print("SAMPLE IN (e.g: A*B/2+C-D) / OUT (e.g: AB*2/C+D-)".center(60, "="))
+    print("="*60)
 
     for i in problem:
-        print("Problem",i)
-        print("Result: ", infix2postfix(i))
-
+        exprn = input("Enter an expression: ")
+        print(infix2postfix(exprn))
